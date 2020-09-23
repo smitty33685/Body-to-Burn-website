@@ -111,8 +111,26 @@
   height: 100vh;
 
   .about-content {
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 6rem;
     text-align: center;
+    background: #555;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+    }
   }
 
   .image {

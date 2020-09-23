@@ -109,8 +109,26 @@
 }
 
 .about .about-content {
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 6rem;
   text-align: center;
+  background: #555;
+}
+
+.about .about-content h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  color: #888;
+}
+
+.about .about-content p {
+  margin-bottom: 1rem;
+  color: #f4f4f4;
 }
 
 .about .image {
