@@ -5,32 +5,76 @@
 }
 
 .header {
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  background: url("../img/showcase3.jpg") no-repeat center center/cover;
   height: 100vh;
   margin-top: -100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
+  text-align: center;
+  z-index: 20;
 }
 
-.header:before {
-  content: "";
+.header .overlay {
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.header .logo {
+  background: #a64dff;
+  padding: 2.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header .logo h1 {
+  font-size: 3.8rem;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.header .logo .tinny-letter {
+  font-size: 3.5rem;
+  color: #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+}
+
+.header h2 {
+  color: #888;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header p {
+  text-transform: uppercase;
+  color: #a64dff;
+  font-size: 1.05rem;
 }
 
 .navbar {
   position: sticky;
   top: 0;
+  left: 0;
   margin-top: 85vh;
   height: 15vh;
-  background: #ff7958;
+  background: #a64dff;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 30;
 }
 
 .navbar ul {
@@ -45,8 +89,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   color: #f4f4f4;
-  padding: 0.3rem 1.5rem;
-  border: 1px #ff7958 solid;
+  padding: 0.4rem 1.5rem;
+  border: 1px #a64dff solid;
   border-radius: 30px;
   transition: all 0.3s ease-out;
   opacity: 0.7;
@@ -59,9 +103,18 @@
 }
 
 .about {
-  height: 300px;
-  width: 100%;
-  background: red;
-  margin-bottom: 2000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.about .about-content {
+  padding: 3rem;
+  text-align: center;
+}
+
+.about .image {
+  background: url("../img/gym-1.jpg") no-repeat center center/cover;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
