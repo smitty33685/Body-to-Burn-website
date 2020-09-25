@@ -1,4 +1,5 @@
 @import "variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 
 //Header
 .header {
-  background: url("../img/showcase3.jpg") no-repeat center center/cover;
+  background: url("../img/gym-3.jpg") no-repeat center center/cover;
   height: 100vh;
   margin-top: -100vh;
   position: relative;
@@ -52,8 +53,8 @@
   }
 
   h2 {
-    color: #888;
-    font-size: 3rem;
+    color: #c6c6c6;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-family: $secondary-font;
     letter-spacing: 2px;
@@ -116,7 +117,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 3rem 6rem;
+    padding: 2rem 6rem;
     text-align: center;
     background: #555;
 
@@ -125,16 +126,114 @@
       font-family: $secondary-font;
       margin-bottom: 2rem;
       color: #888;
+      font-weight: 100;
     }
 
     p {
       margin-bottom: 1rem;
       color: #f4f4f4;
+      font-family: $secondary-font;
     }
   }
 
   .image {
     background: url("../img/gym-1.jpg") no-repeat center center/cover;
     height: 100%;
+  }
+}
+
+//Team
+.team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 50vh;
+
+  @mixin image-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  @mixin overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .team-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #c6c6c6;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: $secondary-font;
+      color: #666;
+    }
+  }
+
+  .image-1 {
+    background: url("../img/trainer-1.jpg") no-repeat center center/cover;
+    @include image-content;
+    &:before {
+      @include overlay;
+    }
+  }
+
+  .image-2 {
+    background: url("../img/trainer-2.jpg") no-repeat center center/cover;
+    @include image-content;
+    &:before {
+      @include overlay;
+    }
+  }
+
+  .image-3 {
+    background: url("../img/trainer-1.jpg") no-repeat center center/cover;
+    @include image-content;
+
+    &:before {
+      @include overlay;
+    }
+  }
+}
+
+//Train
+.train {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+
+  .train-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+    text-align: center;
+    background: #555;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
   }
 }
