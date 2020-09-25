@@ -214,7 +214,7 @@
 }
 
 .train {
-  height: 50vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 50% 25% 25%;
 }
@@ -233,7 +233,7 @@
 .train .train-content h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #888;
   font-weight: 100;
 }
@@ -242,5 +242,238 @@
   margin-bottom: 1rem;
   color: #f4f4f4;
   font-family: "Poppins", sans-serif;
+}
+
+.train div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.train div:nth-child(2):hover {
+  transform: scale(0.94);
+  opacity: 0.8;
+}
+
+.train div:nth-child(2) i {
+  font-size: 8rem;
+  color: #a64dff;
+  margin-bottom: 1.5rem;
+}
+
+.train div:nth-child(2) h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.train div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #d9d9d9;
+  transition: all 0.4s ease-in;
+}
+
+.train div:nth-child(3):hover {
+  transform: scale(0.94);
+  opacity: 0.8;
+}
+
+.train div:nth-child(3) i {
+  font-size: 8rem;
+  color: #a64dff;
+  margin-bottom: 1.5rem;
+}
+
+.train div:nth-child(3) h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.train-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 60vh;
+}
+
+.train-2 div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d9d9d9;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.train-2 div:nth-child(1):hover {
+  transform: scale(0.94);
+  opacity: 0.8;
+}
+
+.train-2 div:nth-child(1) i {
+  font-size: 8rem;
+  color: #a64dff;
+  margin-bottom: 1.5rem;
+}
+
+.train-2 div:nth-child(1) h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.train-2 div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.train-2 div:nth-child(2):hover {
+  transform: scale(0.94);
+  opacity: 0.8;
+}
+
+.train-2 div:nth-child(2) i {
+  font-size: 8rem;
+  color: #a64dff;
+  margin-bottom: 1.5rem;
+}
+
+.train-2 div:nth-child(2) h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.train-2 div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d9d9d9;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.train-2 div:nth-child(3):hover {
+  transform: scale(0.94);
+  opacity: 0.8;
+}
+
+.train-2 div:nth-child(3) i {
+  font-size: 8rem;
+  color: #a64dff;
+  margin-bottom: 1.5rem;
+}
+
+.train-2 div:nth-child(3) h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.train-2 div:nth-child(4) {
+  background: #555;
+}
+
+.community {
+  background: #a64dff;
+  color: #f4f4f4;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.community h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+.connect {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.connect .connect-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #c6c6c6;
+}
+
+.connect .connect-content h2 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #666;
+}
+
+.connect div:nth-child(2) {
+  background: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.connect div:nth-child(2) h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c6c6c6;
+}
+
+.connect div:nth-child(3) {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.connect div:nth-child(3) h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c6c6c6;
+}
+
+.connect div:nth-child(4) {
+  background: #3333ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.connect div:nth-child(4) h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c6c6c6;
 }
 /*# sourceMappingURL=main.css.map */
