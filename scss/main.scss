@@ -67,6 +67,7 @@
   }
 }
 
+//Navbar
 .navbar {
   position: sticky;
   top: 0;
@@ -388,7 +389,7 @@
 .community {
   background: $primary-color;
   color: #f4f4f4;
-  height: 60vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -430,20 +431,7 @@
     }
   }
 
-  div:nth-child(2) {
-    background: #666;
-    @include flexbox;
-    position: relative;
-
-    h3 {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      color: #c6c6c6;
-    }
-  }
-
-  div:nth-child(3) {
+  .social-media-a {
     background: #333;
     @include flexbox;
     position: relative;
@@ -454,9 +442,78 @@
       left: 20px;
       color: #c6c6c6;
     }
+
+    div {
+      display: flex;
+    }
+
+    .round {
+      height: 65px;
+      width: 65px;
+      background: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.6rem;
+      cursor: pointer;
+      border: 4px $primary-color solid;
+      transition: all 0.4s ease-in;
+      color: #333;
+
+      &:hover {
+        background: transparent;
+        color: $primary-color;
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
   }
 
-  div:nth-child(4) {
+  .social-media-b {
+    background: #222;
+    @include flexbox;
+    position: relative;
+
+    h3 {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #c6c6c6;
+    }
+
+    div {
+      display: flex;
+    }
+
+    .round {
+      height: 65px;
+      width: 65px;
+      background: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.6rem;
+      cursor: pointer;
+      border: 4px $primary-color solid;
+      transition: all 0.4s ease-in;
+      color: #222;
+
+      &:hover {
+        background: transparent;
+        color: $primary-color;
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .social-media-c {
     background: #3333ff;
     @include flexbox;
     position: relative;
@@ -466,6 +523,77 @@
       top: 20px;
       left: 20px;
       color: #c6c6c6;
+    }
+
+    div {
+      display: flex;
+    }
+
+    .round {
+      height: 65px;
+      width: 65px;
+      background: #222;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.6rem;
+      cursor: pointer;
+      border: 4px #222 solid;
+      transition: all 0.4s ease-in;
+      color: #3333ff;
+
+      &:hover {
+        background: transparent;
+        color: #222;
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+//Contact
+.contact {
+  background: $primary-color;
+  color: #f4f4f4;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    font-family: $secondary-font;
+    font-weight: 100;
+  }
+}
+
+//Contact 2
+.contact-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 60vh;
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    div {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+
+      h4 {
+        text-transform: uppercase;
+        margin-bottom: 0.3rem;
+        color: $primary-color;
+      }
     }
   }
 }
