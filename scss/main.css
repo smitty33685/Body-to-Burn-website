@@ -28,7 +28,7 @@
 }
 
 .header .logo {
-  background: #b30000;
+  background: #e0603f;
   padding: 2.3rem;
   border-radius: 50%;
   display: flex;
@@ -60,7 +60,7 @@
 
 .header p {
   text-transform: uppercase;
-  color: #b30000;
+  color: #e0603f;
   font-size: 1.05rem;
 }
 
@@ -70,7 +70,7 @@
   left: 0;
   margin-top: 85vh;
   height: 15vh;
-  background: #b30000;
+  background: #e0603f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,7 @@
   font-weight: 100;
   color: #f4f4f4;
   padding: 0.4rem 1.5rem;
-  border: 1px #b30000 solid;
+  border: 1px #e0603f solid;
   border-radius: 30px;
   transition: all 0.3s ease-out;
   opacity: 0.7;
@@ -160,7 +160,7 @@
 }
 
 .team .image-1 {
-  background: url("../img/trainer-1.jpg") no-repeat center center/cover;
+  background: url("../img/trainer-5.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
   position: relative;
@@ -174,11 +174,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .team .image-2 {
-  background: url("../img/trainer-2.jpg") no-repeat center center/cover;
+  background: url("../img/trainer-4.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
   position: relative;
@@ -192,7 +192,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .team .image-3 {
@@ -210,7 +210,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .train {
@@ -251,17 +251,16 @@
   align-items: center;
   background: #e6e6e6;
   cursor: pointer;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .train div:nth-child(2):hover {
   transform: scale(0.94);
-  opacity: 0.8;
 }
 
 .train div:nth-child(2) i {
-  font-size: 8rem;
-  color: #b30000;
+  font-size: 6rem;
+  color: #e0603f;
   margin-bottom: 1.5rem;
 }
 
@@ -278,17 +277,16 @@
   align-items: center;
   cursor: pointer;
   background: #d9d9d9;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .train div:nth-child(3):hover {
   transform: scale(0.94);
-  opacity: 0.8;
 }
 
 .train div:nth-child(3) i {
-  font-size: 8rem;
-  color: #b30000;
+  font-size: 6rem;
+  color: #e0603f;
   margin-bottom: 1.5rem;
 }
 
@@ -311,17 +309,16 @@
   align-items: center;
   background: #d9d9d9;
   cursor: pointer;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .train-2 div:nth-child(1):hover {
   transform: scale(0.94);
-  opacity: 0.8;
 }
 
 .train-2 div:nth-child(1) i {
-  font-size: 8rem;
-  color: #b30000;
+  font-size: 6rem;
+  color: #e0603f;
   margin-bottom: 1.5rem;
 }
 
@@ -338,17 +335,16 @@
   align-items: center;
   background: #e6e6e6;
   cursor: pointer;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .train-2 div:nth-child(2):hover {
   transform: scale(0.94);
-  opacity: 0.8;
 }
 
 .train-2 div:nth-child(2) i {
-  font-size: 8rem;
-  color: #b30000;
+  font-size: 6rem;
+  color: #e0603f;
   margin-bottom: 1.5rem;
 }
 
@@ -365,17 +361,16 @@
   align-items: center;
   background: #d9d9d9;
   cursor: pointer;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .train-2 div:nth-child(3):hover {
   transform: scale(0.94);
-  opacity: 0.8;
 }
 
 .train-2 div:nth-child(3) i {
-  font-size: 8rem;
-  color: #b30000;
+  font-size: 6rem;
+  color: #e0603f;
   margin-bottom: 1.5rem;
 }
 
@@ -390,7 +385,7 @@
 }
 
 .community {
-  background: #b30000;
+  background: #e0603f;
   color: #f4f4f4;
   height: 40vh;
   display: flex;
@@ -450,21 +445,21 @@
 .connect .social-media-a .round {
   height: 65px;
   width: 65px;
-  background: #b30000;
+  background: #e0603f;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0.6rem;
   cursor: pointer;
-  border: 4px #b30000 solid;
+  border: 4px #e0603f solid;
   transition: all 0.4s ease-in;
   color: #333;
 }
 
 .connect .social-media-a .round:hover {
   background: transparent;
-  color: #b30000;
+  color: #e0603f;
 }
 
 .connect .social-media-a .round i {
@@ -495,21 +490,21 @@
 .connect .social-media-b .round {
   height: 65px;
   width: 65px;
-  background: #b30000;
+  background: #e0603f;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0.6rem;
   cursor: pointer;
-  border: 4px #b30000 solid;
+  border: 4px #e0603f solid;
   transition: all 0.4s ease-in;
   color: #222;
 }
 
 .connect .social-media-b .round:hover {
   background: transparent;
-  color: #b30000;
+  color: #e0603f;
 }
 
 .connect .social-media-b .round i {
@@ -562,8 +557,8 @@
 }
 
 .contact {
-  background: #b30000;
-  color: #f4f4f4;
+  background: #555;
+  color: #888;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -588,6 +583,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background: #d9d9d9;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.contact-2 .item:hover {
+  transform: scale(0.96);
 }
 
 .contact-2 .item div {
@@ -599,6 +601,21 @@
 .contact-2 .item div h4 {
   text-transform: uppercase;
   margin-bottom: 0.3rem;
-  color: #b30000;
+  color: #e0603f;
+}
+
+.contact-2 .item i {
+  font-size: 3rem;
+  color: #222;
+}
+
+.contact-2 .item:nth-child(2) {
+  background: #e6e6e6;
+}
+
+.footer {
+  padding: 2rem 3rem;
+  background: #222;
+  color: #c6c6c6;
 }
 /*# sourceMappingURL=main.css.map */

@@ -163,7 +163,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  @mixin overlay-2 {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(172, 8, 8, 0.5);
+    z-index: 100;
   }
 
   .team-content {
@@ -182,7 +193,7 @@
   }
 
   .image-1 {
-    background: url("../img/trainer-1.jpg") no-repeat center center/cover;
+    background: url("../img/trainer-5.jpg") no-repeat center center/cover;
     @include image-content;
     &:before {
       @include overlay;
@@ -190,7 +201,7 @@
   }
 
   .image-2 {
-    background: url("../img/trainer-2.jpg") no-repeat center center/cover;
+    background: url("../img/trainer-4.jpg") no-repeat center center/cover;
     @include image-content;
     &:before {
       @include overlay;
@@ -245,15 +256,14 @@
     align-items: center;
     background: #e6e6e6;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
 
     &:hover {
       transform: scale(0.94);
-      opacity: 0.8;
     }
 
     i {
-      font-size: 8rem;
+      font-size: 6rem;
       color: $primary-color;
       margin-bottom: 1.5rem;
     }
@@ -272,15 +282,14 @@
     align-items: center;
     cursor: pointer;
     background: #d9d9d9;
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
 
     &:hover {
       transform: scale(0.94);
-      opacity: 0.8;
     }
 
     i {
-      font-size: 8rem;
+      font-size: 6rem;
       color: $primary-color;
       margin-bottom: 1.5rem;
     }
@@ -306,15 +315,14 @@
     align-items: center;
     background: #d9d9d9;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
 
     &:hover {
       transform: scale(0.94);
-      opacity: 0.8;
     }
 
     i {
-      font-size: 8rem;
+      font-size: 6rem;
       color: $primary-color;
       margin-bottom: 1.5rem;
     }
@@ -333,15 +341,14 @@
     align-items: center;
     background: #e6e6e6;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
 
     &:hover {
       transform: scale(0.94);
-      opacity: 0.8;
     }
 
     i {
-      font-size: 8rem;
+      font-size: 6rem;
       color: $primary-color;
       margin-bottom: 1.5rem;
     }
@@ -360,15 +367,14 @@
     align-items: center;
     background: #d9d9d9;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
 
     &:hover {
       transform: scale(0.94);
-      opacity: 0.8;
     }
 
     i {
-      font-size: 8rem;
+      font-size: 6rem;
       color: $primary-color;
       margin-bottom: 1.5rem;
     }
@@ -557,8 +563,8 @@
 
 //Contact
 .contact {
-  background: $primary-color;
-  color: #f4f4f4;
+  background: #555;
+  color: #888;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -583,6 +589,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background: #d9d9d9;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      transform: scale(0.96);
+    }
 
     div {
       position: absolute;
@@ -595,5 +608,21 @@
         color: $primary-color;
       }
     }
+
+    i {
+      font-size: 3rem;
+      color: #222;
+    }
   }
+
+  .item:nth-child(2) {
+    background: #e6e6e6;
+  }
+}
+
+//Footer
+.footer {
+  padding: 2rem 3rem;
+  background: #222;
+  color: #c6c6c6;
 }
