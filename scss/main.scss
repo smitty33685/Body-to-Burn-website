@@ -7,6 +7,23 @@
   box-sizing: border-box;
 }
 
+.hamburger {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 400;
+  cursor: pointer;
+  display: none;
+
+  .line {
+    height: 3px;
+    width: 30px;
+    background: $primary-color;
+    margin-bottom: 5px;
+    border-radius: 30%;
+  }
+}
+
 //Header
 .header {
   background: url("../img/gym-3.jpg") no-repeat center center/cover;
@@ -81,6 +98,10 @@
   align-items: center;
   z-index: 30;
 
+  .close {
+    display: none;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -111,11 +132,10 @@
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
 
   .about-content {
     height: 100%;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
     text-align: center;
     background: #555;
     @include flexbox;
@@ -145,12 +165,12 @@
 .team {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 50vh;
 
   .team-content {
     @include flexbox;
-    height: 100%;
+
     background: #c6c6c6;
+    height: 50vh;
 
     h2 {
       text-transform: uppercase;
@@ -165,6 +185,7 @@
     &:before {
       @include overlay;
     }
+    height: 50vh;
   }
 
   .image-2 {
@@ -173,6 +194,7 @@
     &:before {
       @include overlay;
     }
+    height: 50vh;
   }
 
   .image-3 {
@@ -182,12 +204,12 @@
     &:before {
       @include overlay;
     }
+    height: 50vh;
   }
 }
 
 //Train
 .train {
-  height: 60vh;
   display: grid;
   grid-template-columns: 50% 25% 25%;
 
@@ -197,6 +219,7 @@
     padding: 2rem 3rem;
     text-align: center;
     background: #555;
+    height: 60vh;
 
     h1 {
       font-size: 3rem;
@@ -218,6 +241,8 @@
     background: #e6e6e6;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    width: 100%;
+    height: 60vh;
 
     &:hover {
       transform: scale(0.94);
@@ -241,6 +266,8 @@
     cursor: pointer;
     background: #d9d9d9;
     transition: all 0.3s ease-in;
+    width: 100%;
+    height: 60vh;
 
     &:hover {
       transform: scale(0.94);
@@ -264,13 +291,13 @@
 .train-2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 60vh;
 
   div:nth-child(1) {
     @include flexbox;
     background: #d9d9d9;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    height: 60vh;
 
     &:hover {
       transform: scale(0.94);
@@ -294,6 +321,7 @@
     background: #e6e6e6;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    height: 60vh;
 
     &:hover {
       transform: scale(0.94);
@@ -317,6 +345,7 @@
     background: #d9d9d9;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    height: 60vh;
 
     &:hover {
       transform: scale(0.94);
@@ -337,6 +366,7 @@
 
   div:nth-child(4) {
     background: #555;
+    height: 60vh;
   }
 }
 
@@ -356,7 +386,6 @@
 
 //Connect
 .connect {
-  height: 50vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
@@ -364,6 +393,7 @@
     @include flexbox;
     height: 100%;
     background: #c6c6c6;
+    height: 50vh;
 
     h2 {
       text-transform: uppercase;
@@ -376,7 +406,7 @@
     background: #333;
     @include flexbox;
     position: relative;
-    height: 100%;
+    height: 50vh;
 
     h3 {
       position: absolute;
@@ -418,7 +448,7 @@
     background: #222;
     @include flexbox;
     position: relative;
-    height: 100%;
+    height: 50vh;
 
     h3 {
       position: absolute;
@@ -460,7 +490,7 @@
     background: #3333ff;
     @include flexbox;
     position: relative;
-    height: 100%;
+    height: 50vh;
 
     h3 {
       position: absolute;
@@ -559,3 +589,131 @@
   background: #222;
   color: #c6c6c6;
 }
+
+// part
+.btn-train-1-content {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: 300;
+  background: #555;
+  @include flexbox;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .btn-close {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-family: $primary-font;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+.btn-train-2-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  color: #fff;
+  background: blue;
+  @include flexbox;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .btn-close {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-family: $primary-font;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+.btn-train-3-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background: #555;
+  @include flexbox;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .btn-close {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-family: $primary-font;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+.btn-train-4-content {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: 300;
+  background: #555;
+  @include flexbox;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .btn-close {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-family: $primary-font;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+.btn-train-5-content {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: 300;
+  background: #555;
+  @include flexbox;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .btn-close {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-family: $primary-font;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+.active {
+  transform: translateX(0%);
+}
+
+@import "mobile";
