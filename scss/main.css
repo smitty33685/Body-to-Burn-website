@@ -1,3 +1,13 @@
+/*@mixin overlay-2 {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 8, 8, 0.5);
+  z-index: 100;
+} */
 * {
   margin: 0;
   padding: 0;
@@ -109,14 +119,14 @@
 }
 
 .about .about-content {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  align-items: center;
-  justify-content: center;
   padding: 2rem 6rem;
   text-align: center;
   background: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about .about-content h1 {
@@ -147,9 +157,9 @@
 .team .team-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%;
   background: #c6c6c6;
 }
 
@@ -174,7 +184,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .team .image-2 {
@@ -192,7 +202,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .team .image-3 {
@@ -210,7 +220,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .train {
@@ -222,9 +232,9 @@
 .train .train-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
   justify-content: center;
+  height: 100%;
   padding: 2rem 3rem;
   text-align: center;
   background: #555;
@@ -247,8 +257,8 @@
 .train div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #e6e6e6;
   cursor: pointer;
   transition: all 0.3s ease-in;
@@ -273,8 +283,8 @@
 .train div:nth-child(3) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   background: #d9d9d9;
   transition: all 0.3s ease-in;
@@ -305,8 +315,8 @@
 .train-2 div:nth-child(1) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #d9d9d9;
   cursor: pointer;
   transition: all 0.3s ease-in;
@@ -331,8 +341,8 @@
 .train-2 div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #e6e6e6;
   cursor: pointer;
   transition: all 0.3s ease-in;
@@ -357,8 +367,8 @@
 .train-2 div:nth-child(3) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #d9d9d9;
   cursor: pointer;
   transition: all 0.3s ease-in;
@@ -390,8 +400,8 @@
   height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .community h1 {
@@ -409,9 +419,9 @@
 .connect .connect-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%;
   background: #c6c6c6;
 }
 
@@ -425,10 +435,10 @@
   background: #333;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  justify-content: center;
   position: relative;
+  height: 100%;
 }
 
 .connect .social-media-a h3 {
@@ -470,10 +480,10 @@
   background: #222;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  justify-content: center;
   position: relative;
+  height: 100%;
 }
 
 .connect .social-media-b h3 {
@@ -515,10 +525,10 @@
   background: #3333ff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  justify-content: center;
   position: relative;
+  height: 100%;
 }
 
 .connect .social-media-c h3 {
@@ -562,8 +572,8 @@
   height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .contact h1 {
@@ -580,8 +590,9 @@
 
 .contact-2 .item {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   background: #d9d9d9;
   cursor: pointer;
