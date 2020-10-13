@@ -168,7 +168,6 @@
 
   .team-content {
     @include flexbox;
-
     background: #c6c6c6;
     height: 50vh;
 
@@ -185,6 +184,7 @@
     &:before {
       @include overlay;
     }
+
     height: 50vh;
   }
 
@@ -243,6 +243,8 @@
     transition: all 0.3s ease-in;
     width: 100%;
     height: 60vh;
+    text-align: center;
+    padding: 0 1rem;
 
     &:hover {
       transform: scale(0.94);
@@ -322,6 +324,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in;
     height: 60vh;
+    text-align: center;
 
     &:hover {
       transform: scale(0.94);
@@ -376,6 +379,8 @@
   color: #f4f4f4;
   height: 40vh;
   @include flexbox;
+  padding: 0 1rem;
+  text-align: center;
 
   h1 {
     font-size: 3rem;
@@ -394,6 +399,8 @@
     height: 100%;
     background: #c6c6c6;
     height: 50vh;
+    padding: 0 1rem;
+    text-align: center;
 
     h2 {
       text-transform: uppercase;
@@ -547,7 +554,6 @@
 .contact-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 60vh;
 
   .item {
     @include flexbox;
@@ -555,6 +561,7 @@
     background: #d9d9d9;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    height: 60vh;
 
     &:hover {
       transform: scale(0.96);
@@ -590,125 +597,209 @@
   color: #c6c6c6;
 }
 
-// part
+// Train contents-------------------------------------
 .btn-train-1-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: fixed;
-  top: 10vh;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   z-index: 300;
-  background: #555;
-  @include flexbox;
+  background: #fff;
+  color: #333;
   transform: translateX(-100%);
   transition: all 0.5s ease;
 
-  .btn-close {
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    font-family: $primary-font;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+  .train-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: #555;
+    @include flexbox;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
+  }
+
+  .image-content {
+    background: url("../img/train-1.jpg") no-repeat center center/cover;
   }
 }
 
 .btn-train-2-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 300;
-  color: #fff;
-  background: blue;
-  @include flexbox;
+  background: #fff;
+  color: #333;
   transform: translateX(-100%);
   transition: all 0.5s ease;
 
-  .btn-close {
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    font-family: $primary-font;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+  .train-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: #555;
+    @include flexbox;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
+  }
+
+  .image-content {
+    background: url("../img/hiit.jpg") no-repeat center center/cover;
   }
 }
 
 .btn-train-3-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 300;
-  background: #555;
-  @include flexbox;
+  background: #fff;
+  color: #333;
   transform: translateX(-100%);
   transition: all 0.5s ease;
 
-  .btn-close {
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    font-family: $primary-font;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+  .train-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: #555;
+    @include flexbox;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
+  }
+
+  .image-content {
+    background: url("../img/crossfit.jpg") no-repeat center center/cover;
   }
 }
 
 .btn-train-4-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: fixed;
-  top: 10vh;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   z-index: 300;
-  background: #555;
-  @include flexbox;
+  background: #fff;
+  color: #333;
   transform: translateX(-100%);
   transition: all 0.5s ease;
 
-  .btn-close {
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    font-family: $primary-font;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+  .train-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: #555;
+    @include flexbox;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
+  }
+
+  .image-content {
+    background: url("../img/corporate.jpg") no-repeat center center/cover;
   }
 }
 
 .btn-train-5-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: fixed;
-  top: 10vh;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   z-index: 300;
-  background: #555;
-  @include flexbox;
+  background: #fff;
+  color: #333;
   transform: translateX(-100%);
   transition: all 0.5s ease;
 
-  .btn-close {
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    font-family: $primary-font;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+  .train-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: #555;
+    @include flexbox;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
+  }
+
+  .image-content {
+    background: url("../img/rehab.jpg") no-repeat center center/cover;
   }
 }
 

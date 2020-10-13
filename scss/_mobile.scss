@@ -98,4 +98,18 @@
   .train-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  //Connect
+  .connect {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //Contact 2
+  .contact-2 {
+    grid-template-columns: 1fr;
+
+    .item {
+      height: 30vh;
+    }
+  }
 }

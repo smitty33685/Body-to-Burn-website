@@ -22,7 +22,7 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-/*@mixin overlay-2 {
+@mixin overlay-2 {
   content: "";
   position: absolute;
   top: 0;
@@ -31,4 +31,33 @@
   height: 100%;
   background: rgba(172, 8, 8, 0.5);
   z-index: 100;
-} */
+}
+
+.btn-primary {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid $light-color;
+  border-radius: 30px;
+  color: #000;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-family: $secondary-font;
+
+  &:hover {
+    background: $light-color;
+  }
+}
+
+.btn-close {
+  cursor: pointer;
+  color: #f4f4f4;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
