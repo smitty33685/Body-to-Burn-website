@@ -23,15 +23,107 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-@mixin overlay-2 {
-  content: "";
-  position: absolute;
+// Mixin Team Content
+@mixin team-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(172, 8, 8, 0.5);
-  z-index: 100;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .team-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: $light-color;
+    @include flexbox;
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: $primary-color;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #333;
+      font-family: $secondary-font;
+    }
+
+    .team-icons {
+      display: flex;
+
+      .round {
+        height: 65px;
+        width: 65px;
+        background: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0.8rem 0;
+        cursor: pointer;
+        border: 2px #333 solid;
+        transition: all 0.4s ease-in;
+        color: #333;
+
+        &:hover {
+          background: #333;
+          color: $light-color;
+        }
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+// Mixin Train Content
+@mixin train-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .train-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: #555;
+    @include flexbox;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: #888;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #f4f4f4;
+      font-family: $secondary-font;
+    }
+  }
 }
 
 //Buttons
@@ -51,7 +143,7 @@
   }
 }
 
-.btn-secondary {
+/*  .btn-secondary {
   margin-top: 1.5rem;
   padding: 0.8rem 2rem;
   border: 2px solid #333;
@@ -65,7 +157,7 @@
     background: #333;
     color: $light-color;
   }
-}
+}    */
 
 .btn-close {
   cursor: pointer;

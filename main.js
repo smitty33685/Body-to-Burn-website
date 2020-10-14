@@ -1,4 +1,4 @@
-const trainBtn = document.querySelectorAll(".btn-train");
+const overlayBtn = document.querySelectorAll(".btn-overlay");
 const active = document.querySelector(".active");
 const closeBtn = document.querySelectorAll(".btn-close");
 const item = document.querySelectorAll(".item-x");
@@ -20,8 +20,9 @@ function removeContent() {
 }
 
 //listen for click
-for (let a = 0; a < trainBtn.length; a++) {
-  const button = trainBtn[a];
+for (let a = 0; a < overlayBtn.length; a++) {
+  const button = overlayBtn[a];
+  
 
   button.addEventListener("click", showContent);
 }

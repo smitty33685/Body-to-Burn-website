@@ -14,7 +14,7 @@
   color: #333;
 }
 
-.btn-secondary {
+/*  .btn-secondary {
   margin-top: 1.5rem;
   padding: 0.8rem 2rem;
   border: 2px solid #333;
@@ -22,14 +22,13 @@
   color: #333;
   transition: all 0.3s ease-in;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
-}
+  font-family: $secondary-font;
 
-.btn-secondary:hover {
-  background: #333;
-  color: #f4f4f4;
-}
-
+  &:hover {
+    background: #333;
+    color: $light-color;
+  }
+}    */
 .btn-close {
   cursor: pointer;
   color: #f4f4f4;
@@ -194,7 +193,7 @@ body {
 
 .about .about-content {
   height: 100%;
-  padding: 2rem 4rem;
+  padding: 5rem 4rem;
   text-align: center;
   background: #555;
   display: flex;
@@ -739,7 +738,7 @@ body {
   color: #c6c6c6;
 }
 
-.btn-train-1-content {
+.train-1-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
@@ -754,7 +753,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.btn-train-1-content .train-content {
+.train-1-content .train-content {
   height: 100%;
   padding: 2rem 4rem;
   text-align: center;
@@ -765,7 +764,7 @@ body {
   justify-content: center;
 }
 
-.btn-train-1-content .train-content h1 {
+.train-1-content .train-content h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
@@ -773,17 +772,17 @@ body {
   font-weight: 100;
 }
 
-.btn-train-1-content .train-content p {
+.train-1-content .train-content p {
   margin-bottom: 1rem;
   color: #f4f4f4;
   font-family: "Poppins", sans-serif;
 }
 
-.btn-train-1-content .image-content {
+.train-1-content .image-content {
   background: url("../img/train-1.jpg") no-repeat center center/cover;
 }
 
-.btn-train-2-content {
+.train-2-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
@@ -798,7 +797,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.btn-train-2-content .train-content {
+.train-2-content .train-content {
   height: 100%;
   padding: 2rem 4rem;
   text-align: center;
@@ -809,7 +808,7 @@ body {
   justify-content: center;
 }
 
-.btn-train-2-content .train-content h1 {
+.train-2-content .train-content h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
@@ -817,17 +816,17 @@ body {
   font-weight: 100;
 }
 
-.btn-train-2-content .train-content p {
+.train-2-content .train-content p {
   margin-bottom: 1rem;
   color: #f4f4f4;
   font-family: "Poppins", sans-serif;
 }
 
-.btn-train-2-content .image-content {
+.train-2-content .image-content {
   background: url("../img/hiit.jpg") no-repeat center center/cover;
 }
 
-.btn-train-3-content {
+.train-3-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
@@ -842,7 +841,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.btn-train-3-content .train-content {
+.train-3-content .train-content {
   height: 100%;
   padding: 2rem 4rem;
   text-align: center;
@@ -853,7 +852,7 @@ body {
   justify-content: center;
 }
 
-.btn-train-3-content .train-content h1 {
+.train-3-content .train-content h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
@@ -861,17 +860,17 @@ body {
   font-weight: 100;
 }
 
-.btn-train-3-content .train-content p {
+.train-3-content .train-content p {
   margin-bottom: 1rem;
   color: #f4f4f4;
   font-family: "Poppins", sans-serif;
 }
 
-.btn-train-3-content .image-content {
+.train-3-content .image-content {
   background: url("../img/crossfit.jpg") no-repeat center center/cover;
 }
 
-.btn-train-4-content {
+.train-4-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
@@ -886,7 +885,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.btn-train-4-content .train-content {
+.train-4-content .train-content {
   height: 100%;
   padding: 2rem 4rem;
   text-align: center;
@@ -897,7 +896,7 @@ body {
   justify-content: center;
 }
 
-.btn-train-4-content .train-content h1 {
+.train-4-content .train-content h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
@@ -905,17 +904,17 @@ body {
   font-weight: 100;
 }
 
-.btn-train-4-content .train-content p {
+.train-4-content .train-content p {
   margin-bottom: 1rem;
   color: #f4f4f4;
   font-family: "Poppins", sans-serif;
 }
 
-.btn-train-4-content .image-content {
+.train-4-content .image-content {
   background: url("../img/corporate.jpg") no-repeat center center/cover;
 }
 
-.btn-train-5-content {
+.train-5-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
@@ -930,7 +929,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.btn-train-5-content .train-content {
+.train-5-content .train-content {
   height: 100%;
   padding: 2rem 4rem;
   text-align: center;
@@ -941,7 +940,7 @@ body {
   justify-content: center;
 }
 
-.btn-train-5-content .train-content h1 {
+.train-5-content .train-content h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
@@ -949,13 +948,13 @@ body {
   font-weight: 100;
 }
 
-.btn-train-5-content .train-content p {
+.train-5-content .train-content p {
   margin-bottom: 1rem;
   color: #f4f4f4;
   font-family: "Poppins", sans-serif;
 }
 
-.btn-train-5-content .image-content {
+.train-5-content .image-content {
   background: url("../img/rehab.jpg") no-repeat center center/cover;
 }
 
@@ -1270,6 +1269,21 @@ body {
   }
   .contact-2 .item {
     height: 30vh;
+  }
+  .team-1-content,
+  .team-2-content,
+  .team-3-content {
+    grid-template-columns: 1fr;
+  }
+  .image-content {
+    display: none;
+  }
+  .train-1-content,
+  .train-2-content,
+  .train-3-content,
+  .train-4-content,
+  .train-5-content {
+    grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
