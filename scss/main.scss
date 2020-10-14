@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .hamburger {
   position: absolute;
   top: 5%;
@@ -165,6 +169,7 @@
 .team {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background-color: $primary-color;
 
   .team-content {
     @include flexbox;
@@ -181,30 +186,47 @@
   .image-1 {
     background: url("../img/trainer-5.jpg") no-repeat center center/cover;
     @include image-content;
+    transition: all 0.4s ease-in;
     &:before {
       @include overlay;
     }
 
     height: 50vh;
+
+    &:hover {
+      transform: scale(0.95);
+      opacity: 0.9;
+    }
   }
 
   .image-2 {
     background: url("../img/trainer-4.jpg") no-repeat center center/cover;
     @include image-content;
+    transition: all 0.4s ease-in;
     &:before {
       @include overlay;
     }
     height: 50vh;
+
+    &:hover {
+      transform: scale(0.95);
+      opacity: 0.9;
+    }
   }
 
   .image-3 {
     background: url("../img/trainer-1.jpg") no-repeat center center/cover;
     @include image-content;
-
+    transition: all 0.4s ease-in;
     &:before {
       @include overlay;
     }
     height: 50vh;
+
+    &:hover {
+      transform: scale(0.95);
+      opacity: 0.9;
+    }
   }
 }
 
@@ -800,6 +822,214 @@
 
   .image-content {
     background: url("../img/rehab.jpg") no-repeat center center/cover;
+  }
+}
+
+//team content
+.team-1-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .team-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: $light-color;
+    @include flexbox;
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: $primary-color;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #333;
+      font-family: $secondary-font;
+    }
+
+    .team-icons {
+      display: flex;
+
+      .round {
+        height: 65px;
+        width: 65px;
+        background: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0.8rem 0;
+        cursor: pointer;
+        border: 2px #333 solid;
+        transition: all 0.4s ease-in;
+        color: #333;
+
+        &:hover {
+          background: #333;
+          color: $light-color;
+        }
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .image-content {
+    background: url("../img/trainer-5.jpg") no-repeat center center/cover;
+  }
+}
+
+.team-2-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .team-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: $light-color;
+    @include flexbox;
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: $primary-color;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #333;
+      font-family: $secondary-font;
+    }
+
+    .team-icons {
+      display: flex;
+
+      .round {
+        height: 65px;
+        width: 65px;
+        background: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0.8rem 0;
+        cursor: pointer;
+        border: 2px #333 solid;
+        transition: all 0.4s ease-in;
+        color: #333;
+
+        &:hover {
+          background: #333;
+          color: $light-color;
+        }
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .image-content {
+    background: url("../img/trainer-4.jpg") no-repeat center center/cover;
+  }
+}
+
+.team-3-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  .team-content {
+    height: 100%;
+    padding: 2rem 4rem;
+    text-align: center;
+    background: $light-color;
+    @include flexbox;
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: $secondary-font;
+      margin-bottom: 2rem;
+      color: $primary-color;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #333;
+      font-family: $secondary-font;
+    }
+
+    .team-icons {
+      display: flex;
+
+      .round {
+        height: 65px;
+        width: 65px;
+        background: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0.8rem 0;
+        cursor: pointer;
+        border: 2px #333 solid;
+        transition: all 0.4s ease-in;
+        color: #333;
+
+        &:hover {
+          background: #333;
+          color: $light-color;
+        }
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .image-content {
+    background: url("../img/trainer-1.jpg") no-repeat center center/cover;
   }
 }
 

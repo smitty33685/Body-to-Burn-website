@@ -4,8 +4,10 @@ const closeBtn = document.querySelectorAll(".btn-close");
 const item = document.querySelectorAll(".item-x");
 
 function showContent() {
+  console.log(this.id);
   const tag = document.querySelector(`.${this.id}-content`);
   tag.classList.add("active");
+  
 }
 
 function removeContent() {

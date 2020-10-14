@@ -1,3 +1,4 @@
+//Mixins
 @mixin image-content {
   height: 100%;
   width: 100%;
@@ -33,24 +34,56 @@
   z-index: 100;
 }
 
+//Buttons
 .btn-primary {
   margin-top: 1.5rem;
   padding: 0.8rem 2rem;
   border: 2px solid $light-color;
   border-radius: 30px;
-  color: #000;
+  color: $light-color;
   transition: all 0.3s ease-in;
   cursor: pointer;
   font-family: $secondary-font;
 
   &:hover {
     background: $light-color;
+    color: #333;
+  }
+}
+
+.btn-secondary {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid #333;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-family: $secondary-font;
+
+  &:hover {
+    background: #333;
+    color: $light-color;
   }
 }
 
 .btn-close {
   cursor: pointer;
   color: #f4f4f4;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
+.btn-close-secondary {
+  cursor: pointer;
+  color: #333;
   position: absolute;
   top: 5%;
   right: 5%;

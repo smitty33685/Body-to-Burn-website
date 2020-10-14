@@ -3,7 +3,7 @@
   padding: 0.8rem 2rem;
   border: 2px solid #f4f4f4;
   border-radius: 30px;
-  color: #000;
+  color: #f4f4f4;
   transition: all 0.3s ease-in;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
@@ -11,6 +11,23 @@
 
 .btn-primary:hover {
   background: #f4f4f4;
+  color: #333;
+}
+
+.btn-secondary {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid #333;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-secondary:hover {
+  background: #333;
+  color: #f4f4f4;
 }
 
 .btn-close {
@@ -27,10 +44,28 @@
   transform: scale(1.08);
 }
 
+.btn-close-secondary {
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn-close-secondary:hover {
+  transform: scale(1.08);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .hamburger {
@@ -190,6 +225,7 @@
 .team {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background-color: #e0603f;
 }
 
 .team .team-content {
@@ -213,6 +249,7 @@
   width: 100%;
   position: relative;
   cursor: pointer;
+  transition: all 0.4s ease-in;
   height: 50vh;
 }
 
@@ -226,12 +263,18 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
+.team .image-1:hover {
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+
 .team .image-2 {
   background: url("../img/trainer-4.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
   position: relative;
   cursor: pointer;
+  transition: all 0.4s ease-in;
   height: 50vh;
 }
 
@@ -245,12 +288,18 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
+.team .image-2:hover {
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+
 .team .image-3 {
   background: url("../img/trainer-1.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
   position: relative;
   cursor: pointer;
+  transition: all 0.4s ease-in;
   height: 50vh;
 }
 
@@ -262,6 +311,11 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+}
+
+.team .image-3:hover {
+  transform: scale(0.95);
+  opacity: 0.9;
 }
 
 .train {
@@ -903,6 +957,222 @@
 
 .btn-train-5-content .image-content {
   background: url("../img/rehab.jpg") no-repeat center center/cover;
+}
+
+.team-1-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.team-1-content .team-content {
+  height: 100%;
+  padding: 2rem 4rem;
+  text-align: center;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-1-content .team-content h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  color: #e0603f;
+  font-weight: 100;
+}
+
+.team-1-content .team-content p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.team-1-content .team-content .team-icons {
+  display: flex;
+}
+
+.team-1-content .team-content .team-icons .round {
+  height: 65px;
+  width: 65px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0.8rem 0;
+  cursor: pointer;
+  border: 2px #333 solid;
+  transition: all 0.4s ease-in;
+  color: #333;
+}
+
+.team-1-content .team-content .team-icons .round:hover {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.team-1-content .team-content .team-icons .round i {
+  font-size: 1.5rem;
+}
+
+.team-1-content .image-content {
+  background: url("../img/trainer-5.jpg") no-repeat center center/cover;
+}
+
+.team-2-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.team-2-content .team-content {
+  height: 100%;
+  padding: 2rem 4rem;
+  text-align: center;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-2-content .team-content h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  color: #e0603f;
+  font-weight: 100;
+}
+
+.team-2-content .team-content p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.team-2-content .team-content .team-icons {
+  display: flex;
+}
+
+.team-2-content .team-content .team-icons .round {
+  height: 65px;
+  width: 65px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0.8rem 0;
+  cursor: pointer;
+  border: 2px #333 solid;
+  transition: all 0.4s ease-in;
+  color: #333;
+}
+
+.team-2-content .team-content .team-icons .round:hover {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.team-2-content .team-content .team-icons .round i {
+  font-size: 1.5rem;
+}
+
+.team-2-content .image-content {
+  background: url("../img/trainer-4.jpg") no-repeat center center/cover;
+}
+
+.team-3-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background: #fff;
+  color: #333;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.team-3-content .team-content {
+  height: 100%;
+  padding: 2rem 4rem;
+  text-align: center;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-3-content .team-content h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  color: #e0603f;
+  font-weight: 100;
+}
+
+.team-3-content .team-content p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.team-3-content .team-content .team-icons {
+  display: flex;
+}
+
+.team-3-content .team-content .team-icons .round {
+  height: 65px;
+  width: 65px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0.8rem 0;
+  cursor: pointer;
+  border: 2px #333 solid;
+  transition: all 0.4s ease-in;
+  color: #333;
+}
+
+.team-3-content .team-content .team-icons .round:hover {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.team-3-content .team-content .team-icons .round i {
+  font-size: 1.5rem;
+}
+
+.team-3-content .image-content {
+  background: url("../img/trainer-1.jpg") no-repeat center center/cover;
 }
 
 .active {
