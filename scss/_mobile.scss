@@ -118,6 +118,14 @@
   .team-2-content,
   .team-3-content {
     grid-template-columns: 1fr;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 13px;
+    }
   }
 
   .image-content {
@@ -131,6 +139,14 @@
   .train-4-content,
   .train-5-content {
     grid-template-columns: 1fr;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 13px;
+    }
   }
 }
 

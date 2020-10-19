@@ -1275,6 +1275,16 @@ body {
   .team-3-content {
     grid-template-columns: 1fr;
   }
+  .team-1-content h1,
+  .team-2-content h1,
+  .team-3-content h1 {
+    margin-bottom: 1rem;
+  }
+  .team-1-content p,
+  .team-2-content p,
+  .team-3-content p {
+    font-size: 13px;
+  }
   .image-content {
     display: none;
   }
@@ -1284,6 +1294,20 @@ body {
   .train-4-content,
   .train-5-content {
     grid-template-columns: 1fr;
+  }
+  .train-1-content h1,
+  .train-2-content h1,
+  .train-3-content h1,
+  .train-4-content h1,
+  .train-5-content h1 {
+    margin-bottom: 1rem;
+  }
+  .train-1-content p,
+  .train-2-content p,
+  .train-3-content p,
+  .train-4-content p,
+  .train-5-content p {
+    font-size: 13px;
   }
 }
 
