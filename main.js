@@ -12,10 +12,10 @@ function showContent() {
 
 function removeContent() {
   for (let i = 0; i < item.length; i++) {
-    const uzNevim = item[i];
-    console.log(uzNevim);
+    const itemX = item[i];
+    
 
-    uzNevim.classList.remove("active");
+    itemX.classList.remove("active");
   }
 }
 
@@ -46,4 +46,20 @@ hamburger.addEventListener("click", function () {
 
 close.addEventListener("click", function () {
   navbar.classList.remove("nav-active");
+});
+
+// smooth scrolling
+$(".navbar a").on("click", function (event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 80,
+      },
+      700
+    );
+  }
 });

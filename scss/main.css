@@ -1286,4 +1286,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media (min-width: 1400px) {
+  .navbar {
+    height: 10vh;
+    margin-top: 90vh;
+  }
+}
 /*# sourceMappingURL=main.css.map */
