@@ -21,7 +21,6 @@
   border-radius: 30px;
   color: #333;
   transition: all 0.3s ease-in;
-  cursor: pointer;
   font-family: $secondary-font;
 
   &:hover {
